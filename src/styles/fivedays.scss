@@ -1,0 +1,81 @@
+.five-days-info {
+  margin: 0 auto 30px;
+  min-width: 280px;
+  box-shadow: 0 8px 43px rgba(16, 33, 54, 0.59);
+  border-radius: 35px;
+  background-color: rgba($color: #102136, $alpha: 0.8);
+  color: white; // Удали
+}
+.five-days-title {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 34px 0 22px 0;
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 32px auto 0;
+  padding: 20px;
+  &-container {
+    width: 320px;
+  }
+  &__button-today {
+    width: 126px;
+    margin-right: 16px;
+    padding: 6px 0;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+  }
+  &__button-five-days {
+    width: 126px;
+    padding: 6px 0;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.54);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .five-days-info {
+    // max-width: 79.16%;
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .five-days-info {
+    // max-width: 79.16%;
+    max-width: 620px;
+  }
+
+  .five-days-title {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1096px) {
+  .five-days-info {
+    max-width: 1060px;
+  }
+}
